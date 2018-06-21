@@ -1,14 +1,29 @@
 @import 'colors.styl'
+@import 'header.styl'
 *
 	margin 0
 	padding 0
 	box-sizing border-box
+body
+	background COLOR_BRAND_LIGHT_GREY
 img
 	max-width 100%
 h1
 	margin-bottom 25px
 	font 400 25px / 1.2 TimesNewRoman
+a
+	text-decoration none
+	color inherit
 
+.custom-list
+	list-style-type none
+	list-style-position inside
+.center-block
+	display table
+	margin auto
+.shadowed
+	position relative
+	box-shadow 0 2px 10px 0 rgba(COLOR_BRAND_BLACK, .2)
 .orange-button
 	padding 7px 11px
 	text-align center
