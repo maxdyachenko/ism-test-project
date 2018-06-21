@@ -1,3 +1,36 @@
+@import 'colors.styl'
 *
 	margin 0
 	padding 0
+	box-sizing border-box
+img
+	max-width 100%
+h1
+	margin-bottom 25px
+	font 400 25px / 1.2 TimesNewRoman
+
+.orange-button
+	padding 7px 11px
+	text-align center
+	text-transform uppercase
+	color COLOR_BRAND_WHITE
+	border none
+	border-radius 3px
+	cursor pointer
+	outline none
+	background COLOR_BRAND_ORANGE
+a.nav-link
+	color COLOR_BRAND_LIGHT_BROWN
+	font 400 14px / 1.4 Arial
+.dotline
+	width 100%
+	margin 40px 0
+	border-top 2px dotted COLOR_BRAND_LIGHT_GREY2
+.image-block
+	border 1px solid COLOR_BRAND_LIGHT_GREY1
+	box-shadow 5px 5px 5px 0px rgba(COLOR_BRAND_BLACK, .05)
+	background COLOR_BRAND_WHITE
+	&.squared
+		border 1px solid COLOR_BRAND_DARK_WHITE
+	&.rounded
+		border-radius 50%
