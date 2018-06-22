@@ -13,14 +13,16 @@ To run development mode
 
 ```
 npm i
+```
 
 And
 
 ```
 npm start
-
+```
 
 To run production mode
 
 ```
 npm run build
+```
