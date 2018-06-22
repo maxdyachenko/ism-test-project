@@ -8,7 +8,7 @@
     <title>ISM test task</title>
 </head>
 <body>
-<div>
+<div id="app">
     <header class="main-header container-fluid">
         <div class="row">
             <div class="orange-line"></div>
@@ -36,25 +36,27 @@
     </header>
 
     <section class="container welcome-info">
-        <article class="col content-block">
-            <div class="dotline"></div>
-            <h1>Welcome</h1>
-            <div class="content">
-                <div class="image-block">
-                    <img src="./images/man.jpg" alt="Man">
+        <div class="dots-wrapper">
+            <div class="col dotline hidden-600px"></div>
+            <div class="col dotline"></div>
+        </div>
+        <div class="wrapper">
+            <article class="content-block col">
+                <h1>Welcome</h1>
+                <div class="content">
+                    <div class="image-block">
+                        <img src="./images/man.jpg" alt="Man">
+                    </div>
+                    <div class="text-block">
+                        <p><a href="#" class="nav-link">Click here</a> for more info about this free website template
+                            created by TemplateMonster.com</p>
+                        <p>Aenean nonummy hendrerit mau rellus porta. Fusce suscipit varius m sociis natoque penaibet
+                            magni parturient montes nasetur ridiculumula dui.</p>
+                        <button class="orange-button">more</button>
+                    </div>
                 </div>
-                <div class="text-block">
-                    <p><a href="#" class="nav-link">Click here</a> for more info about this free website template
-                        created by TemplateMonster.com</p>
-                    <p>Aenean nonummy hendrerit mau rellus porta. Fusce suscipit varius m sociis natoque penaibet
-                        magni parturient montes nasetur ridiculumula dui.</p>
-                    <button class="orange-button">more</button>
-                </div>
-            </div>
-        </article>
-        <div class="col">
-            <div class="dotline"></div>
-            <div class="right-content">
+            </article>
+            <div class="right-content col">
                 <h1>Features</h1>
                 <ul class="custom-list">
                     <li>
@@ -77,16 +79,15 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
 
     <section class="container products">
-            <div class="dots-wrapper">
-                <div class="col dotline hidden-600px"></div>
-                <div class="col dotline"></div>
-            </div>
-            <h1>Best Choice</h1>
+        <div class="dots-wrapper">
+            <div class="col dotline hidden-600px"></div>
+            <div class="col dotline"></div>
+        </div>
+        <h1>Best Choice</h1>
 
         <div class="wrapper">
             <article class="product">
@@ -171,7 +172,8 @@
             <div class="col">
                 <h2>Email Updates</h2>
                 <form action="#">
-                    <label for="email">Join our digital mailing list and get news deals<br> and be first to know about events</label>
+                    <label for="email">Join our digital mailing list and get news deals<br> and be first to know about
+                        events</label>
                     <div>
                         <input type="email" id="email" name="email" placeholder="Enter e-mail adress...">
                         <button class="orange-button">Subscribe</button>
@@ -181,6 +183,5 @@
         </div>
     </section>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
