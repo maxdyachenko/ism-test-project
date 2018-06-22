@@ -42,7 +42,7 @@ module.exports = {
                 use: [{
                     loader: 'url-loader',
                     options: {
-                        limit: 4000, // Convert images < 8kb to base64 strings
+                        limit: 4000,
                         name: 'fonts/[hash]-[name].[ext]'
                     }
                 }]
