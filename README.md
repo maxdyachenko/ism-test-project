@@ -13,7 +13,9 @@ To run development mode
 
 ```
 npm i
-```
+
+And
+
 ```
 npm start
 
