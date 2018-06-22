@@ -4,17 +4,20 @@
 @import 'welcome-info.styl'
 @import 'products.styl'
 @import 'feed.styl'
+@import 'footer.styl'
 *
 	margin 0
 	padding 0
 	box-sizing border-box
+body,html
+	font-size 62.5%
 body
 	background COLOR_BRAND_LIGHT_GREY
 img
 	display block
 	max-width 100%
 h1, h2
-	margin-bottom 25px
+	margin-bottom 2.5rem
 	letter-spacing .1px
 	font 400 25px / 1.2 TimesNewRoman
 h2
@@ -49,9 +52,9 @@ a.nav-link
 .dots-wrapper
 	display flex
 	justify-content space-between
+	margin 4rem 0
 .dotline
 	max-width 450px
-	margin 40px 0
 	border-top 2px dotted COLOR_BRAND_LIGHT_GREY2
 .image-block
 	padding 3px
@@ -64,6 +67,8 @@ a.nav-link
 		border-radius 50%
 
 
-@media (max-width 900px)
+@media (max-width 600px)
 	.dotline
 		max-width 100%
+	body, html
+		font-size 40%

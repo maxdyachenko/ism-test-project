@@ -1,0 +1,22 @@
+footer.container-fluid
+	padding-top 4.5rem
+	padding-bottom @padding-top
+	background COLOR_BRAND_ORANGE
+	.text
+		text-align center
+	p
+		display inline-block
+		text-align center
+		font 400 12px / 1.2 Arial
+		&:last-of-type
+			color COLOR_BRAND_LIGHT_GREY1
+		&:not(:last-of-type)
+			position relative
+			padding-right 10px
+			color COLOR_BRAND_WHITE1
+			&:after
+				position absolute
+				right 0
+				content '|'
+				color COLOR_BRAND_WHITE
+
