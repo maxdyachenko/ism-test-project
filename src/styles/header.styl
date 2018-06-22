@@ -7,6 +7,7 @@
 		width 100%
 		height 100%
 	.menu
+		position relative
 		display flex
 		padding 2rem 0
 	.logo
@@ -28,3 +29,32 @@
 				font 400 18px / 1.2 Arial
 				letter-spacing .2px
 				text-transform uppercase
+
+#hamburger, .menuicon
+	display none
+#menuicon
+	width 25px
+	height @width
+@media (max-width: 600px)
+	.menuicon
+		position absolute
+		display block
+		top 50%
+		transform translateY(-50%)
+		right 15px
+		width 30px
+		cursor pointer
+	#app .center-block
+		display none
+	#hamburger:checked
+		& ~ .center-block
+			display block
+			position fixed
+			width 250px
+			height 100%
+			top 0
+			left 0
+			background rgba(COLOR_BRAND_BLACK, .5)
+			li
+				display block
+				color COLOR_BRAND_WHITE
