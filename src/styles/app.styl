@@ -3,6 +3,7 @@
 @import 'header.styl'
 @import 'welcome-info.styl'
 @import 'products.styl'
+@import 'feed.styl'
 *
 	margin 0
 	padding 0
@@ -12,10 +13,12 @@ body
 img
 	display block
 	max-width 100%
-h1
+h1, h2
 	margin-bottom 25px
 	letter-spacing .1px
 	font 400 25px / 1.2 TimesNewRoman
+h2
+	font-size 20px
 a
 	text-decoration none
 	color inherit
@@ -36,13 +39,16 @@ li
 	text-transform uppercase
 	color COLOR_BRAND_WHITE
 	border none
-	border-radius 3px
+	border-radius 5px
 	cursor pointer
 	outline none
 	background COLOR_BRAND_ORANGE
 a.nav-link
 	color COLOR_BRAND_LIGHT_BROWN
 	font 400 14px / 1.4 Arial
+.dots-wrapper
+	display flex
+	justify-content space-between
 .dotline
 	max-width 450px
 	margin 40px 0
