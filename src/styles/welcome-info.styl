@@ -1,0 +1,52 @@
+.welcome-info
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	h1
+		color COLOR_BRAND_LIGHT_BROWN4
+	.dotline
+		margin-top 65px
+	.content-block
+		margin-right -70px
+	.content
+		display flex
+		align-items flex-start
+	.image-block
+		display inline-block
+		border-radius 50%
+		img
+			max-width 165px
+			border-radius 50%
+	.text-block
+		display inline-block
+		margin 0 -90px 0 35px
+		p
+			word-wrap break-word
+			font 400 14px / 1.5 Arial
+			&:last-of-type
+				margin-top 22px
+	.orange-button
+		margin-top 15px
+	.right-content
+		margin-left 70px
+		li
+			position relative
+			font 400 14px / 1 Arial
+			padding-left 10px
+			&:before
+				position absolute
+				content "•"
+				left 0
+				color COLOR_BRAND_LIGHT_BROWN4
+			&:not(:first-of-type)
+				margin-top 8px
+
+@media (max-width 900px)
+	.welcome-info
+		.text-block
+			margin 15px 0 0 0
+		.right-content
+			margin-left 0
+		.content
+			flex-wrap wrap
+			justify-content center

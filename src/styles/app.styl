@@ -1,5 +1,8 @@
 @import 'colors.styl'
+@import 'grid.styl'
 @import 'header.styl'
+@import 'welcome-info.styl'
+@import 'products.styl'
 *
 	margin 0
 	padding 0
@@ -7,9 +10,11 @@
 body
 	background COLOR_BRAND_LIGHT_GREY
 img
+	display block
 	max-width 100%
 h1
 	margin-bottom 25px
+	letter-spacing .1px
 	font 400 25px / 1.2 TimesNewRoman
 a
 	text-decoration none
@@ -17,6 +22,7 @@ a
 
 .custom-list
 	list-style-type none
+li
 	list-style-position inside
 .center-block
 	display table
@@ -38,14 +44,20 @@ a.nav-link
 	color COLOR_BRAND_LIGHT_BROWN
 	font 400 14px / 1.4 Arial
 .dotline
-	width 100%
+	max-width 450px
 	margin 40px 0
 	border-top 2px dotted COLOR_BRAND_LIGHT_GREY2
 .image-block
+	padding 3px
 	border 1px solid COLOR_BRAND_LIGHT_GREY1
-	box-shadow 5px 5px 5px 0px rgba(COLOR_BRAND_BLACK, .05)
+	box-shadow 5px 5px 5px 0 rgba(COLOR_BRAND_BLACK, .05)
 	background COLOR_BRAND_WHITE
 	&.squared
 		border 1px solid COLOR_BRAND_DARK_WHITE
 	&.rounded
 		border-radius 50%
+
+
+@media (max-width 900px)
+	.dotline
+		max-width 100%
